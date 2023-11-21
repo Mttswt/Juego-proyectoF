@@ -1,5 +1,5 @@
 import pygame
-
+reloj = pygame.time.Clock()
 class Nota:
     def __init__(self, x, y):
         self.x = x
@@ -12,3 +12,5 @@ class Nota:
 
     def actualizar(self, velocidad):
         self.y += velocidad
+
+reloj.tick()
